@@ -3,8 +3,8 @@
     require "$project_root/simple_html_dom.php";
     
     exec("/usr/bin/phantomjs --ssl-protocol=any $project_root/rates.js", $result);
-    $drivejoy = implode($result);
-    file_put_contents("$project_root/rates",$drivejoy);
+    $fx = implode($result);
+    file_put_contents("$project_root/rates",$fx);
 
     $html = file_get_html("$project_root/rates");
     
