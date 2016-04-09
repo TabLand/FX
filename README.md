@@ -1,2 +1,2 @@
 # FX
-Get daily updates in the fx rates I'm interested in
+Get daily updates on the fx rates I'm interested in
