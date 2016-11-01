@@ -9,7 +9,7 @@ page.onResourceError = function(resourceError) {
 };
  
 page.open(
-    "http://www.xe.com/currencycharts/?from=GBP&to=PKR",
+    "http://www.xe.com/currencycharts/?from=BASE_CURRENCY&to=COUNTER_CURRENCY",
     function (status) {
         if ( status !== 'success' ) {
             console.log(
