@@ -37,8 +37,7 @@ function send_fx_alert($base_currency, $counter_currency, $project_root){
     
     if($html){
         $rates = $html->find('div#rates_detail_desc', 0)->plaintext;
-        echo "ijtabahussain@live.com $rates FROM:FX Alerts <alert@ijtaba.me.uk>\r\n";
-        #mail("ijtabahussain@live.com", $rates, $rates, "FROM:FX Alerts <alert@ijtaba.me.uk>\r\n");
+        mail("ijtabahussain@live.com", $rates, $rates, "FROM:FX Alerts <alert@ijtaba.me.uk>\r\n");
     } else {
         echo "\nSomething just went royally wrong, wait till next run";
     }
